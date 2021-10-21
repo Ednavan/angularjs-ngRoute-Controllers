@@ -1,7 +1,6 @@
 exibindo.controller('ctrmostraresultado', function($scope, $location){
-    $scope.titulo ="HELLO WORLD"
+    $scope.valor1 = "Valor 1"
+    $scope.valor2 = "Valor 2"
+    $scope.mostrandoresult = "Resultado"
     
-    $scope.navegando = function(){
-        $location.path('/caminhoinicio')
-    }
 })
