@@ -3,14 +3,16 @@ exibindo.controller('ctrinicio', function($scope, $location){
 
 
     $scope.navegando = function(){
-        $location.path('/capturaNumber')
-        $location.search({
-            teste: "value"
-        })
+       
+        var informacaoesparaseremenviadas = {
+            teste: "valor do teste",
+            dados:$scope.teste
+        };
 
-        var search = $location.search()
-        console.log(search)
+        $location.search(informacaoesparaseremenviadas);
+        console.log(informacaoesparaseremenviadas)
 
+        // $location.path('/capturaNumber')
     }
   
     
