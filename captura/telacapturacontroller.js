@@ -2,16 +2,20 @@ exibindo.controller('ctrlcapturavalor',function($scope, $location){
     $scope.inputSoma = "valor 2"
 
     $scope.navegando = function(){
-        // $location.path('/resultado')
-        $location.search({
-            teste: "value"
-        })
+        var dadoSearch = $location.search();
+        var informacoesparasomar = {
+            valor1: dadoSearch.dados,
+            valor2:$scope.capturavalor
+        }
+        $location.search(informacoesparasomar)
+       
+       
+        $location.path('/resultado')
 
-        var search = $location.search()
-        console.log(search)
-
+        
+        
     }
+  
+   
+    })
     
-
-    
-})
