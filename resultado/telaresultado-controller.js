@@ -1,12 +1,10 @@
-exibindo.controller('ctrmostraresultado', function($scope, $location){
-
+exibindo.controller('ctrMostrarResultado', function($scope, $location){
     
     var dadoSearch = $location.search();
     console.log(dadoSearch)
 
     var soma;
     soma=(parseInt(dadoSearch.valor1) + parseInt(dadoSearch.valor2))
-
 
     $scope.valor1 = "Valor 1"
         $scope.dd= dadoSearch.valor1

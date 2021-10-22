@@ -2,15 +2,15 @@ angular.module("exibindo").config(function($routeProvider){
     
     $routeProvider.when('/caminhoinicio',{
 
-        controller: 'ctrinicio',
+        controller: 'ctrInicio',
         templateUrl: '../inicio/inicio.html'
 
     }).when('/resultado',{
-        controller: 'ctrmostraresultado',
+        controller: 'ctrMostrarResultado',
         templateUrl: '../resultado/resultado.html'
 
     }).when('/capturaNumber',{
-        controller: 'ctrlcapturavalor',
+        controller: 'ctrlCapturaValor',
         templateUrl: '../captura/captura.html'
 
     }).otherwise('/caminhoinicio');
